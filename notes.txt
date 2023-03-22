@@ -1,28 +1,51 @@
-g++ is the cpp compiler. try typing g++ in terminal 
-
-
-to build a program: g++ -Wall -std=c++14 main.cpp
+compiler
+    > g++ is the cpp compiler. try typing g++ in terminal 
+    > to build a program: g++ -Wall -std=c++14 main.cpp
 
 
 building = compiling + linking 
     compiling => translating to machine code 
-    linking => linking created objects to a.out 
+    linking   => linking created objects and dependencies to a.out 
 
 
+keywords: 
+    > reserved words not able to be redfined 
+    > https://en.cppreference.com/w/cpp/keyword
 
-keywords: reserved words not able to be redfined 
-https://en.cppreference.com/w/cpp/keyword
-
-identifiers: something a programmer names 
+identifiers
+    > something a programmer names 
 
 
 operators: 
-+, -, =, ::, etc 
+    > +, -, =, ::, etc 
 
 
 preprocessor directives 
-ex) #include <iostream>
+    ex) #include <iostream>
 
-process the included files for us to use 
-commonly used to conditionly compile code like if ur on windows or machine
-preprocessor does not understand cpp code
+    process the included files for us to use 
+    commonly used to conditionly compile code like if ur on windows or machine
+    preprocessor does not understand cpp code
+
+
+namespaces: 
+    std::cout 
+    std   => namespace (cpp standard namespace)
+    count => function definition 
+    ::    => scope resolution operator 
+
+
+    example: 
+        using namespace std;
+            this will tell the compiler all the func defintions should come from the std namespace 
+
+
+    other ex) 
+    using std::cout; 
+    using std::cin; 
+    using std::endl;
+        this will allow us to use these functions without defining the namespace across the entire file 
+        it will only import these three functions 
+
+
+
