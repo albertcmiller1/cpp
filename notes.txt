@@ -49,3 +49,16 @@ namespaces:
 
 
 
+primitive (fundamintal) data types: 
+    > char types 
+    > integer types 
+        > signed
+        > unsigned 
+    > floating-point types 
+    > bool types 
+    > Notes: 
+        > size and precision is often compiler-dependent 
+
+
+
+
