@@ -9,6 +9,7 @@ int main(){
     // int age(16); // local variable will overwrite s
     cout << age << endl;
     cout << age2 << endl;
+
     return 0;
 }
 
