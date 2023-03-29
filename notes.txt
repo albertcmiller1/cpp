@@ -54,11 +54,32 @@ primitive (fundamintal) data types:
     > integer types 
         > signed
         > unsigned 
+        > by default, integers are signed. so no need to specify unless you want unsigned 
     > floating-point types 
     > bool types 
     > Notes: 
         > size and precision is often compiler-dependent 
 
+
+types of constants 
+    > literal constants 
+        > A literal constant is a value typed directly into your program wherever it is needed. For example, consider the following statement: long width = 5; This statement assigns the integer variable width the value 5. The 5 in the statement is a literal constant
+        > ex ints) 12, 12U, 12L, 12LL
+        > ex floats) 12.1, 12.1F, 12.1L
+        > ex escape codes) \n, \r, \t, \b, \', \", \\
+    > declared constants 
+        > const keyword 
+        > ex) const double pi {3.14};
+    > constant expressions 
+        > constexpr keyword
+    > enumerated constants 
+        > enum keyword 
+    > defined constants 
+        > #define 
+        > ex) #define pi 3.14
+        > cant be typed checked 
+        > think of it as a blind find replace 
+        > dont do this in modern cpp
 
 
 
