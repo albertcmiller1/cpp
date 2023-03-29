@@ -1,0 +1,18 @@
+arrays
+    > fixed in size 
+    > same datatype 
+    > stored contiguously in memory 
+        > well techincally seperated by the number of bytes taken up by the datatype inside the array 
+    > no check to determine if youre out of bounds (programmers responsiblity)
+    > ex) element_type array_name [number_of_elements]
+    > the name of the array represents the location of the first element in the array at index 0
+
+vectors
+    > dynaimc array 
+    > will resize as needed so no out of index errors occur 
+    > its a contain in the cpp standard libary 
+    > an array that can grow and shrink at execution time 
+    > can provide bounds checking 
+    > had cool functions like sory, reverse, find, etc 
+
+
