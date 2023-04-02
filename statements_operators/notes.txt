@@ -1,0 +1,30 @@
+expressions 
+    > a sequence of operators and operands that specifies a computation 
+    > examples
+        > 34     | literal 
+        > foo    | variable 
+        > 1 + 2  | addition 
+        > 2 * 5  | multiplication  
+        > 34     | relational
+        > a = b  | assignment 
+
+statements 
+    > a complete line of code that performs some action 
+    > usually contain expressions 
+    > cpp has may types of statements 
+        > expression, null, compound, selection, iteration, declaration, jump, try blocks, etc 
+
+operators 
+    > assignment 
+        > l-value is the location in memory 
+        > r-value is the value at that location 
+    > arithmetic 
+    > increment and decrement 
+        > increment) num++ or ++num ) they both do the same thing 
+        > decrement) num++
+    > equality 
+    > relational 
+    > logical 
+    > compound assignment 
+    > precedence 
+    > member access 

@@ -8,7 +8,7 @@ int main() {
 
     cout << "hello " << " world" << endl; // can chain together 
     
-    cout << "hello " << " world \n"; // 
+    cout << "hello " << " world \n";
 
     cout << "hello\ncpp\nworld";
 
