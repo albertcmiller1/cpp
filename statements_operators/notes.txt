@@ -28,3 +28,45 @@ operators
     > compound assignment 
     > precedence 
     > member access 
+
+mixed types
+    > if iperands ore of different types, C++ will convert one (coercion)
+    > if compiler cant convert, an error will occur 
+    > Higher vs Lower types are based on the size of the values the types can hold 
+    > short and char types are always converted to int 
+    > higher types hold large values and lower types hold smaller values 
+    > long double, double, float, unsigned long, long, unsigned int, int 
+    > promotion: converting to higher type from lower type 
+    > demotion: convertion from lower type to higher 
+    > example) static_cast<double>(total)
+
+logical operators
+    > put your logical expression inside ()
+    > not has higher precedence than and 
+    > and has higher precedence than or 
+    > not is an unary operator
+    > and and or are binary operators 
+    > && 
+    > ||
+    > !=
+    > <= 
+    > short-circuit evaluation
+        > when evaluating a logical expression C++ stops as soon as the result is known 
+        > expr1 || expr2 || expr3
+        > if expr1 is true, cpp will stop evaluating 
+
+compound assignment operators 
+    > += 
+    > -= 
+    > *= 
+    > /=
+    > %= 
+    > >>=
+    > <<=
+    > &= 
+    > ^=
+    > |= 
+
+operator precedence 
+    > google it bruh
+    
