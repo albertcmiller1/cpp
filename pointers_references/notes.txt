@@ -1,0 +1,47 @@
+what is a pointer? 
+    > a variable whose value is an address (variable hold values, pointers hold addresses)
+    > that variable can be another variable or a function 
+    > if x is an integer variable and its value is 10, then i can declare a pointer that points to it 
+    > to use the data that the pointer is pointing to you must know its type
+    > 4.cpp is a good example 
+
+why use pointers? 
+    > you shouldnt unless you have to 
+    > inside functions, pointers can be used to access data that are defined outside the function. 
+        > those variables may not be in scope so you cant access them by their name 
+
+    > pointers can be used to operate on arrays very efficiently 
+
+    > we can allocate memory dynamically on the heap or free store
+        > this memory doesnt even have a variable name 
+        > the only way to get to it is via a pointer 
+
+    > with OOP, pointers are how polymorphism works
+
+    > can access specific addresses in memory 
+        > useful in emedded and systems applications 
+
+declaring pointers
+    > always initialize pointers 
+    > uninitilized pointers contain garbage data and can point anywhere 
+    > nullptr is a way to initialize to 'address zero'
+
+accessing pointer address
+    > & the address operator 
+    > variables are stored in unique addresses 
+    > unary operator 
+    > evaluates to the address of its operand 
+        > opperand cannot be a constand or expression that evaluates to temp values 
+
+sizeof a pointer variable 
+    > dont confuse the size of a pointer vs the size of what its pointing to 
+    > all pointers in a program have the same size
+    > they may be pointing to very large or small types
+
+storing an address in a pointer variable 
+    > the compiler will make sure that the address stored in a pointer variable is of the correct type 
+    > see 3.cpp for an example 
+
+
+dereferencing a pointer
+    > access the data were pointing to 
