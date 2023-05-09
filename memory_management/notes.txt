@@ -1,0 +1,13 @@
+Memory management is required to avoid wasting memory and to make sure allocation takes palce efficently 
+    > ex) During the decloaration of arrays, sometimes the exact memory is not known to us, and that is why we declare an array of max size, which results in wasting memory 
+    > can use memory allocation to avoid this 
+
+two operators that are used for the allocation and deallocation of memory 
+    > new operator 
+        > dynamic memory allocation (allocate at runtime)
+        > responsible fo rthe creation of the object
+        > can be overloaded 
+        > the return type of new is the type for which the memory was allocated 
+        > it automatically computes the size of the data object 
+        > it can initialize object while creating a memory for it 
+    > delete operator 
