@@ -47,7 +47,6 @@ dereferencing a pointer
     > access the data were pointing to 
     > can also use the * 
 
-
 dynamic memory allocation 
     > allocating storage from the heap at runtime 
     > we often dont know how much storage we need until we need it 
