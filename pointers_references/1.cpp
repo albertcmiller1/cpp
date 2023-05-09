@@ -13,5 +13,4 @@ int main(){
     cout << "the value of num is " << num << endl;
     cout << "sizeof of num is: " << sizeof num << endl;
     cout << "address of num is " << &num << endl; 
-
 }

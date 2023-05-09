@@ -4,9 +4,10 @@ using namespace std;
 
 int main(){
 
-    int score{10};
+    int score {100};
 
     int *score_ptr {nullptr};   // initilize a pointer 
+
     score_ptr = &score;         // set the value of the pointer to the address of score
 
     cout << "the value of score      " << score << endl;        // value of score variable 

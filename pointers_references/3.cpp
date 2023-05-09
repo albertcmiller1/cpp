@@ -4,8 +4,8 @@ using namespace std;
 
 int main(){
 
-    int score{10};
-    double high_temp{100.7};
+    int score {10};
+    double high_temp {100.7};
 
     int *score_ptr {nullptr};
 

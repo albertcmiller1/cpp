@@ -45,3 +45,5 @@ storing an address in a pointer variable
 
 dereferencing a pointer
     > access the data were pointing to 
+    > can also use the * 
+    > 
