@@ -7,7 +7,7 @@ int main(){
     cin >> size;
     int *ptr;
 
-    ptr = new int[size];
+    ptr = new int[size]; //the array is on the heap, but the ptr is on the stack 
     cout << "Enter the elements: " <<endl;
 
     for (int i=0;i<size;i++){
@@ -20,6 +20,6 @@ int main(){
         cout << "Element: "<<ptr[i] <<endl;
     }
 
-    delete[] ptr;
+    delete [] ptr;
 
 }

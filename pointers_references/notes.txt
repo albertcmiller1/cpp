@@ -46,4 +46,18 @@ storing an address in a pointer variable
 dereferencing a pointer
     > access the data were pointing to 
     > can also use the * 
-    > 
+
+
+dynamic memory allocation 
+    > allocating storage from the heap at runtime 
+    > we often dont know how much storage we need until we need it 
+    > we can allocate storage for a variable at runtime 
+    > recall arrays 
+        > need to explicity provide the size 
+        > but vectors grow and shrink dynamically 
+    > we can use pointers to access newly allocated heap storage 
+
+const and pointers
+    > pointers to constants 
+    > constant pointers 
+    > constant pointers to consttants 
