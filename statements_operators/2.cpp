@@ -5,7 +5,7 @@ int main() {
 
     int counter {10};
     int result {0};
-    result = ++counter; // do the ++ before assignment 
+    result = ++counter; // increment counter, then assign counter to result 
     cout << "counter is " << counter << endl;
     cout << "result is " << result << endl;
 
@@ -13,7 +13,7 @@ int main() {
 
     counter = 10;
     result = 0;
-    result = counter++; // do the ++ after assignment 
+    result = counter++; // assign counter to result, then increment counter 
     cout << "counter is " << counter << endl;
     cout << "result is " << result << endl;
 
