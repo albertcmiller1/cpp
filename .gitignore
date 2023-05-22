@@ -1,5 +1,6 @@
 # Other 
 .vscode
+sockets/
 
 # Prerequisites
 *.d

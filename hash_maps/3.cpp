@@ -13,9 +13,6 @@ int main ()
 
 
     // A bucket is a slot in the container's internal hash table to which elements are assigned based on the hash value of their key.
-    
-
-
 
   unsigned nbuckets = mymap.bucket_count();
 
