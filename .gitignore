@@ -1,6 +1,7 @@
 # Other 
 .vscode
 sockets/
+crow_api
 
 # Prerequisites
 *.d

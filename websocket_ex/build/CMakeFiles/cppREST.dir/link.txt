@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cppREST.dir/main.cpp.o -o cppREST   -L/opt/homebrew/lib  -Wl,-rpath,/opt/homebrew/lib -lboost_system -lpthread 
