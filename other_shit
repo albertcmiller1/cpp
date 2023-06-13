@@ -1,0 +1,167 @@
+#include "order_book.hpp"
+// #include "crow.h"
+#include <iostream> 
+#include <unordered_set>
+#include <mutex>
+#include <iostream>
+#include <thread>
+#include <unistd.h>  
+#include <cstdlib>
+#include <chrono>
+#include <unistd.h>
+
+
+
+
+
+OrderBook create_fake_orders(OrderBook book){
+    
+    /*
+    // only do this if arg_map is fully populated 
+    std::unordered_map<string, char*> arg_map = parse_args(argc, argv);
+    book.add_order(
+        atoi(arg_map["order_id"]),                  // int order_id
+        !strcmp("buy", arg_map["buy_sell"]),        // bool buy_sell
+        atoi(arg_map["shares"]),                    // int shares
+        std::stof(arg_map["limit"]),                // float limit
+        atoi(arg_map["entry_time"]),                // int entry_time
+        atoi(arg_map["event_time"])                 // int event_time
+    );
+    */
+    // using namespace std::chrono;
+ 
+    // std::cout << ms << " milliseconds since the Epoch\n";
+    
+    srand((unsigned) time(NULL));
+    int order_id = rand();
+
+    uint64_t curr_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    book.add_order(
+        order_id,           // order_id
+        "sell",              // buy_sell
+        1,                  // shares
+        23.49,              // limit
+        curr_time,          // entry_time
+        curr_time           // event_time
+    );
+    
+    order_id = rand();
+    unsigned int microseconds {10000};
+    usleep(microseconds);
+    curr_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    book.add_order(
+        order_id,           // order_id
+        "sell",              // buy_sell
+        1,                  // shares
+        23.48,              // limit
+        curr_time,          // entry_time
+        curr_time           // event_time
+    );
+
+    order_id = rand();
+    usleep(microseconds);
+    curr_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    book.add_order(
+        order_id,           // order_id
+        "sell",              // buy_sell
+        1,                  // shares
+        23.47,              // limit
+        curr_time,          // entry_time
+        curr_time           // event_time
+    );
+
+    order_id = rand();
+    usleep(microseconds);
+    curr_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    book.add_order(
+        order_id,           // order_id
+        "sell",              // buy_sell
+        1,                  // shares
+        23.46,              // limit
+        curr_time,          // entry_time
+        curr_time           // event_time
+    );   
+
+    order_id = rand();
+    usleep(microseconds);
+    curr_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    book.add_order(
+        order_id,           // order_id
+        "sell",              // buy_sell
+        1,                  // shares
+        23.45,              // limit
+        curr_time,          // entry_time
+        curr_time           // event_time
+    ); 
+
+
+    order_id = rand();
+    usleep(microseconds);
+    curr_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    book.add_order(
+        order_id,           // order_id
+        "buy",              // buy_sell
+        1,                  // shares
+        23.44,              // limit
+        curr_time,          // entry_time
+        curr_time           // event_time
+    );
+
+    order_id = rand();
+    usleep(microseconds);
+    curr_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    book.add_order(
+        order_id,           // order_id
+        "buy",              // buy_sell
+        1,                  // shares
+        23.43,              // limit
+        curr_time,          // entry_time
+        curr_time           // event_time
+    );
+
+    order_id = rand();
+    usleep(microseconds);
+    curr_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    book.add_order(
+        order_id,           // order_id
+        "buy",              // buy_sell
+        1,                  // shares
+        23.42,              // limit
+        curr_time,          // entry_time
+        curr_time           // event_time
+    );   
+
+    order_id = rand();
+    usleep(microseconds);
+    curr_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    book.add_order(
+        order_id,           // order_id
+        "buy",              // buy_sell
+        1,                  // shares
+        23.41,              // limit
+        curr_time,          // entry_time
+        curr_time           // event_time
+    ); 
+
+
+    order_id = rand();
+    usleep(microseconds);
+    curr_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    book.add_order(
+        order_id,           // order_id
+        "buy",              // buy_sell
+        1,                  // shares
+        23.41,              // limit
+        curr_time,          // entry_time
+        curr_time           // event_time
+    ); 
+
+    
+    return book;
+}
+
+
+    std::cout << "order_id\t     limit      time \t\tqantity\t order_type" << std::endl;
+    for (auto it = book.order_map.begin(); it != book.order_map.end(); it++){
+        os << it->first << "\t     " << it->second.limit << "\t" << it->second.entry_time << "\t" << it->second.shares << "\t" << it->second.buy_sell << std::endl;
+    }

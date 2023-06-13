@@ -58,5 +58,19 @@ dynamic memory allocation
 
 const and pointers
     > pointers to constants 
+        > the data pointed to by the pointers is constant and cannot be changed
+        > the pointer itself can change and point somewhere else
     > constant pointers 
+        > the data pointed to by the pointers can be changed
+        > the pointer itself cannot change and point shomewhere else
+
     > constant pointers to consttants 
+        > the data pointed to by the pointer is constant and cannot be changed
+        > the pointer itself cannot change and point somewhere else
+
+
+passing pointers to a function 
+    > pass-by-reference with pointer parameters
+    > we can use pointers and the dereference operator to achieve pass-by-reference
+    > the function parameter is a pointer 
+    > the actual parameter can be a pointer or address of a variable 
