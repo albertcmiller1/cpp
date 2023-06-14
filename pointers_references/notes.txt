@@ -74,3 +74,9 @@ passing pointers to a function
     > we can use pointers and the dereference operator to achieve pass-by-reference
     > the function parameter is a pointer 
     > the actual parameter can be a pointer or address of a variable 
+
+returning a pointer from a function
+    > should return pointers to 
+        > memory dynamically allocated in the function 
+        > to data that was passed in 
+    > never return a pointer to a local function variabl 
