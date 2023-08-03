@@ -10,7 +10,6 @@ void foo(int Z){
     }
 }
 
-
 // A callable object
 class thread_obj {
 public:

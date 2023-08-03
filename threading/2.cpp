@@ -17,20 +17,15 @@ int main(){
 
     // This thread is launched by using function pointer as callable
     thread th1(foo, 10);
-
     
     // Wait for thread t1 to finish
     // th1.join();
     // cout << "this should be after" << endl;
 
-
     while (true){
         sleep( 5 );  
         cout << "main function still working" << endl;
     }
-
-
-
 
     return 0;
 }
