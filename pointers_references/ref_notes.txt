@@ -1,0 +1,35 @@
+what is a reference? 
+    > an alias for a variable 
+    > must be initialized to a variable when declared
+    > cannot be null 
+    > once initialized, cannot be made to refer to a different variable 
+    > very useful as function parameters
+    > can be thought of as a constant pointer that is automatically dereferenced
+
+
+L-values
+    > object that occupies a location in memory 
+    > values that have names and are addressable 
+    > modifiable if they are not constants 
+
+    > ex) int x {100}; // x is an L-Value 
+
+R-Values 
+    > non-addressable and non-assignable 
+    > a value that's not an L-Value 
+    > on the right-hand side of an assignment expression 
+    > a literal 
+    > a temporary which is intended to be non-modifiable 
+
+    > ex) int x {100}; // 100 is an R-Value 
+    > ex) int y = x + 100; // x + 100 is an R-Value 
+
+
+L-Value References 
+    > the reference we are used to are L-Value reference, because we are referencing L-Values 
+    > int x {100};
+    > int &ref1 = x; // ref1 is a reference to an L-Value 
+    > ref1 = 999;
+    > int &ref2 = 100; // Error: 100 is an R-Value 
+
+

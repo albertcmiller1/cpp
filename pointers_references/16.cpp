@@ -10,16 +10,16 @@ int main () {
    int &r = i;
    
    i = 5;
-   cout << "Value of i: " << i << endl;
-   cout << "Value of i: " << r  << endl;
+   cout << "Value of i: " << i << endl;   // 5
+   cout << "Value of i: " << r  << endl;  // 5
 
    i = 6;
-   cout << "Value of i: " << i << endl;
-   cout << "Value of i: " << r  << endl;
+   cout << "Value of i: " << i << endl;   // 6
+   cout << "Value of i: " << r  << endl;  // 6
  
    r = 7;
-   cout << "Value of i: " << i << endl;
-   cout << "Value of r: " << r  << endl;
+   cout << "Value of i: " << i << endl;   // 7
+   cout << "Value of r: " << r  << endl;  // 7
 
    return 0;
 }
