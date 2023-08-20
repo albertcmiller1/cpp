@@ -32,8 +32,6 @@ int main()
     // v = doit(v);
 
 
-
-
     // print
     for (auto i : v){
         cout << i << " ";

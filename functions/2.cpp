@@ -1,5 +1,4 @@
 #include <iostream>
-//https://www.geeksforgeeks.org/passing-reference-to-a-pointer-in-c/
 using namespace std;
   
 int global_var = 42;
