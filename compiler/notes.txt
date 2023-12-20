@@ -1,0 +1,14 @@
+preproccessor runs first and replaces text
+files are compiled into translation units 
+translation units are turned into object files 
+
+these object files are basically binary files that when converted to binary are assembly 
+
+after this is done, the linker will then link together multiple object files 
+
+
+
+recap: 
+    1. prepreoccessor > replace text 
+    2. 
+    3. 
