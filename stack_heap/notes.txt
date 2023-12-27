@@ -1,0 +1,18 @@
+https://courses.engr.illinois.edu/cs225/fa2022/resources/stack-heap/#:~:text=stack%20%3A%20stores%20local%20variables,stores%20the%20code%20being%20executed
+
+
+High Address 
+------------------
+    Stack
+------------------
+    Heap
+------------------
+    Unitialized Data
+------------------
+    Initialized Data
+------------------
+Low Address 
+
+
+By convention, we express these addresses in base 16 numbers. 
+For instance, the smallest possible address is 0x00000000 (where the 0x means base 16), and the largest possible address could be 0xFFFFFFFF.

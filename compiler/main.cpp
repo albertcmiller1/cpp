@@ -3,7 +3,10 @@ int multipy(int a, int b){
     return result;   
 }
 
-// int main(){
-//     return multipy(2, 4);
-//     // return 0;
-// }
+int main(){
+    return multipy(2, 4);
+    // return 0;
+}
+
+
+
