@@ -31,6 +31,7 @@ void set_test(){
 
     s1.insert(69);
     s1.erase(69);
+    int val_is_in_set = s2.count(3);
 
     int num_elements = s2.size();
 }
