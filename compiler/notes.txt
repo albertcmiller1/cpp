@@ -1,0 +1,52 @@
+source.cpp
+> main code text file 
+
+preprocessor 
+> resolves all # statments 
+    > #include 
+    > #define 
+    > #if 
+> creates a source.i file 
+
+compiler 
+> abstract syntax tree 
+> creates an intermediate representation 
+> similar to assembaly 
+> creates source.s file 
+
+assembler 
+> creates machine code for unique machines 
+> creates object or binary file 
+> source.o file 
+
+linker
+> brings in other needed executables such as print()
+> static linker 
+> dynamic linker 
+    > .so files (might be .dylib for mac)
+    > shared libary files 
+> creates source.o 
+
+
+
+
+
+
+g++ main.cpp -o app // name the executable app 
+g++ -E main.cpp // show what the preprocessor sees 
+
+/opt/homebrew/bin/g++-14 -fdump-tree-all-graph main.cpp
+    > creates a bunch of files 
+    > can vizualize any of the .dot files 
+    > ex) xdot a-main.cpp.030t.fixup_cfg2.dot
+
+g++ -S main.cpp
+    > creates main.s file 
+    > shows the assembaly code of the program 
+
+
+g++ -c main.cpp 
+    > compiles without linking 
+
+for any .o file 
+    > objdump -t main.o 
